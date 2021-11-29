@@ -1,5 +1,6 @@
 import React from 'react';
-import { View, Text, TouchableOpacity } from 'react-native';
+import { View, Text } from 'react-native';
+import Button from '../../components/Button';
 
 import styles from './styles';
 
@@ -15,9 +16,7 @@ const Home = () => {
   return (
     <View style={styles.container}>
       <Text style={styles.text}>Bem vindo!</Text>
-      <TouchableOpacity style={styles.button} onPress={() => handleSingIn}>
-        <Text style={styles.buttonText}>Sign in</Text>
-      </TouchableOpacity>
+      <Button title="Sign In"/>
     </View>
   );
 }
