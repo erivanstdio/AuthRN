@@ -19,12 +19,12 @@ const AuthRoutes = () => {
       }}
     >
       <Screen 
-        name="Home"
-        component={Home}
-      />
-      <Screen 
         name="SingIn"
         component={SingIn}
+      />
+      <Screen 
+        name="Home"
+        component={Home}
       />
       <Screen 
         name="Dashboard"

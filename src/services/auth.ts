@@ -1,4 +1,4 @@
-function SingIn() {
+export function singIn() {
   return new Promise((resolve) => {
     setTimeout(() => {
       resolve({
@@ -7,10 +7,7 @@ function SingIn() {
           name: 'Brunno',
           email: 'erivanstdio@gmail.com',
         },
-      })
-    }, 2000)
-  })
+      });
+    }, 2000);
+  });
 }
-
-
-export default SingIn;
