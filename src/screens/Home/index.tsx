@@ -4,12 +4,13 @@ import Button from '../../components/Button';
 
 import styles from './styles';
 
+interface Props {
+  navigation: any;
+}
 
-const Home = () => {
+const Home = ({navigation}: Props) => {
 
-  // FIX: ajeita essa porra ai major
-
-  function handleSingIn(navigation: any) {
+  function handleSingIn() {
     navigation.navigate("Dashboard")
   }
 
